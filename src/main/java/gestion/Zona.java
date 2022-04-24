@@ -15,6 +15,13 @@ public class Zona {
 		this.zoo.add(zoo);
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public Zoologico getZoo() {
+		return zoo.get(0);
+	}
 	public void agregarAnimales(Animal nuevo) {
 		animales.add(nuevo);
 	}

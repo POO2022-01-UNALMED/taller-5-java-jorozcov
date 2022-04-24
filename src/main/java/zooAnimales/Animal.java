@@ -30,6 +30,10 @@ public class Animal {
 		return edad;
 	}
 	
+	public int getTotalAnimales() {
+		return totalAnimales;
+	}
+	
 	public String getGenero() {
 		return genero;
 	}

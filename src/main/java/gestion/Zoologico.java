@@ -19,7 +19,15 @@ public class Zoologico {
 		return zonas;
 	}
 	
-	public void agregarzonas(Zona nueva) {
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public String getUbicacion() {
+		return ubicacion;
+	}
+	
+	public void agregarZonas(Zona nueva) {
 		zonas.add(nueva);
 	}
 	
