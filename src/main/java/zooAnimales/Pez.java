@@ -18,6 +18,14 @@ public class Pez extends Animal {
 		listado.add(this);
 	}
 	
+	public String getColorEscamas() {
+		return colorEscamas;
+	}
+	
+	public int getCantidadAletas() {
+		return cantidadAletas;
+	}
+	
 	public static int cantidadPeces() {
 		return salmones + bacalaos;
 	}

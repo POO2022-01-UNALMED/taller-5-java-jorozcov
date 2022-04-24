@@ -1,7 +1,7 @@
 package zooAnimales;
 
 import java.util.ArrayList;
-import gestion.Zona;
+
 
 public class Mamifero extends Animal {
 	private ArrayList<Mamifero> listado;
@@ -17,6 +17,18 @@ public class Mamifero extends Animal {
 		listado.add(this);
 		this.pelaje = pelaje;
 		this.patas = patas;
+	}
+	
+	public ArrayList<Mamifero> getListado(){
+		return listado;
+	}
+	
+	public boolean getPelaje() {
+		return pelaje;
+	}
+	
+	public int getPatas() {
+		return patas;
 	}
 	
 	public static int cantidadMamiferos() {

@@ -22,6 +22,21 @@ public class Animal {
 		this.genero = genero;
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public int getEdad() {
+		return edad;
+	}
+	
+	public String getGenero() {
+		return genero;
+	}
+	
+	public String getHabitat() {
+		return habitat;
+	}
 	public String movimiento() {
 		return "desplazarse";
 	}
