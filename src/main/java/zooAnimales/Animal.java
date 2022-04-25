@@ -26,12 +26,24 @@ public class Animal {
 		return nombre;
 	}
 	
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
 	public ArrayList<Zona> getZona() {
 		return zona;
 	}
 	
+	public void setZona(ArrayList<Zona> zona) {
+		this.zona = zona;
+	}
+	
 	public int getEdad() {
 		return edad;
+	}
+	
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 	
 	public int getTotalAnimales() {
@@ -42,16 +54,25 @@ public class Animal {
 		return genero;
 	}
 	
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	
 	public String getHabitat() {
 		return habitat;
 	}
+	
+	public void setHabitat(String habitad) {
+		this.habitat = habitad;
+	}
+	
 	public String movimiento() {
 		return "desplazarse";
 	}
 	
 	public static String totalPorTipo() {
 		return "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+
-				"Aves "+Ave.cantidadAves()+"\n"+
+				"Aves: "+Ave.cantidadAves()+"\n"+
 				"Reptiles: "+Reptil.cantidadReptiles()+"\n"+
 				"Peces: "+Pez.cantidadPeces()+"\n"+
 				"Anfibios: "+Anfibio.cantidadAnfibios();

@@ -38,6 +38,6 @@ public class Zoologico {
 			total = total + Z.cantidadAnimales();
 		}
 		return total;
-	}
+	}	
 	
 }

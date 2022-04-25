@@ -8,7 +8,10 @@ public class Ave extends Animal {
 	public static int aguilas = 0;
 	private String colorPlumas;
 	
-	public Ave() {}
+	public Ave() {
+		listado.add(this);
+	}
+		
 	public Ave( String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		super( nombre,  edad,  habitat,  genero);
 		this.colorPlumas = colorPlumas;
@@ -20,7 +23,7 @@ public class Ave extends Animal {
 	}
 	
 	public static int cantidadAves() {
-		return halcones + aguilas;
+		return listado.size();
 	}
 	
 	public String movimiento() {
