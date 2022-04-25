@@ -20,12 +20,24 @@ public class Zoologico {
 		return zonas;
 	}
 	
+	public void setZonas(ArrayList<Zona> Zonas) {
+		this.zonas =Zonas;
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
 	
+	public void setNombre(String nomb) {
+		this.nombre = nomb;
+	}
+	
 	public String getUbicacion() {
 		return ubicacion;
+	}
+	
+	public void setUbicacion(String ubi) {
+		this.ubicacion = ubi;
 	}
 	
 	public void agregarZonas(Zona nueva) {

@@ -20,9 +20,26 @@ public class Zona {
 		return nombre;
 	}
 	
+	public void setNombre(String nomb) {
+		this.nombre = nomb;
+	}
+	
 	public Zoologico getZoo() {
 		return zoo.get(0);
 	}
+	
+	public void setZoo(ArrayList<Zoologico> zoo) {
+		this.zoo = zoo;
+	}
+	
+	public ArrayList<Animal> getAnimales(){
+		return this.animales;
+	}
+	
+	public void setAnimales(ArrayList<Animal> animales) {
+		this.animales = animales;
+	}
+	
 	public void agregarAnimales(Animal nuevo) {
 		animales.add(nuevo);
 	}
